@@ -1,0 +1,57 @@
+#header {
+  margin-bottom: 20px;
+}
+
+#tickets {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 10px;
+  display: grid;
+}
+
+.ticket {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: transform .3s;
+  box-shadow: 0 2px 4px #0000001a;
+}
+
+.ticket:hover {
+  transform: scale(1.05);
+}
+
+.ticket img {
+  border-bottom: 1px solid #ddd;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  width: 100%;
+  height: auto;
+}
+
+.ticket .card-body {
+  padding: 15px;
+}
+
+.ticket .btn {
+  width: 100%;
+}
+
+@media (width <= 1200px) {
+  #tickets {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (width <= 768px) {
+  #tickets {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width <= 480px) {
+  #tickets {
+    grid-template-columns: 1fr;
+  }
+}
+/*# sourceMappingURL=index.3a01df49.css.map */
