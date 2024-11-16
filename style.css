@@ -1,0 +1,56 @@
+#header {
+  margin-bottom: 20px;
+}
+
+#tickets {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px; /* Menambahkan jarak antara tiket */
+  padding: 10px;
+}
+
+.ticket {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.ticket:hover {
+  transform: scale(1.05); /* Efek hover untuk memperbesar tiket */
+}
+
+.ticket img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.ticket .card-body {
+  padding: 15px;
+}
+
+.ticket .btn {
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+  #tickets {
+    grid-template-columns: repeat(3, 1fr); /* 3 kolom di layar medium */
+  }
+}
+
+@media (max-width: 768px) {
+  #tickets {
+    grid-template-columns: repeat(2, 1fr); /* 2 kolom di layar kecil */
+  }
+}
+
+@media (max-width: 480px) {
+  #tickets {
+    grid-template-columns: 1fr; /* 1 kolom di layar ekstra kecil */
+  }
+}

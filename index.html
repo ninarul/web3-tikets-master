@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB3 TICKETS</title>
+    <!-- Link CDN untuk Bootstrap -->
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav id="header" class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Tickets</a>
+          <div class="d-flex" id="account">
+          </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div id="tickets"></div> <!-- Ganti class dengan id -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Script untuk memuat Bootstrap JS dan Web3 -->
+    <script src="https://cdn.jsdelivr.net/npm/@web3/web3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="index.js"></script> <!-- Pastikan path ke index.js benar -->
+</body>
+</html>
